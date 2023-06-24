@@ -17,10 +17,12 @@ GREEN 		:= \033[0;32m
 RED 		:= \033[0;31m
 RESET_COL 	:= \033[0m
 
-NAME 		:= megaphone
+NAME 		:= moar_brainz
 CC 			:= c++
 CFLAGS 		:= -Wall -Werror -Wextra -std=c++98
-SRC 		:=	main.cpp
+SRC 		:=	main.cpp \
+				Zombie.cpp \
+				zombieHorde.cpp
 
 all: $(NAME)
 
