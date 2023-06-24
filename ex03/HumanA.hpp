@@ -1,6 +1,14 @@
-//
-// Created by max on 6/24/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/24 17:53:11 by mwagner           #+#    #+#             */
+/*   Updated: 2023/06/24 17:53:30 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef EX03_HUMANA_HPP
 #define EX03_HUMANA_HPP
@@ -10,13 +18,14 @@
 class HumanA {
 public:
 	HumanA(std::string name, Weapon &weapon);
-	void attack() const;
+	void	attack() const;
 	~HumanA();
 
 private:
 	std::string	_name;
-	Weapon	&_weapon;
+	Weapon		&_weapon;
 };
 
 
 #endif //EX03_HUMANA_HPP
+

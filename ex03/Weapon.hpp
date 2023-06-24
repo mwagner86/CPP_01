@@ -1,6 +1,14 @@
-//
-// Created by max on 6/24/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/24 17:55:51 by mwagner           #+#    #+#             */
+/*   Updated: 2023/06/24 17:57:13 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef EX03_WEAPON_HPP
 #define EX03_WEAPON_HPP
@@ -9,13 +17,14 @@
 #define RED "\033[1;31m"
 #define GREEN "\033[32m"
 
+#pragma once
 #include <iostream>
 
 
 class Weapon {
 
 public:
-	explicit Weapon(std::string type);
+	Weapon(std::string type);
 	~Weapon();
 
 	const	std::string &getType();

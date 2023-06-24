@@ -1,6 +1,14 @@
-//
-// Created by max on 6/24/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/24 17:51:50 by mwagner           #+#    #+#             */
+/*   Updated: 2023/06/24 17:57:49 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "HumanA.hpp"
 
@@ -12,9 +20,9 @@ HumanA::~HumanA() {
 	// empty Destructor body
 }
 
-void HumanA::attack() const {
+void	HumanA::attack() const {
 	std::cout << GREEN << this->_name << DEFAULT;
-	std::cout << " attacks with ";
+	std::cout << " attacks with their ";
 	std::cout << RED << this->_weapon.getType() << DEFAULT;
 	std::cout << "." << std::endl;
 }
