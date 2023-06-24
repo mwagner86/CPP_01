@@ -1,6 +1,14 @@
-//
-// Created by max on 6/24/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/24 17:42:37 by mwagner           #+#    #+#             */
+/*   Updated: 2023/06/24 17:42:40 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Zombie.hpp"
 
@@ -17,7 +25,7 @@ Zombie::~Zombie() {
 }
 
 // Setter function for name to protect private var: _name
-void Zombie::set_name(std::string name) {
+void	Zombie::set_name(std::string name) {
 	this->_name = name;
 }
 
