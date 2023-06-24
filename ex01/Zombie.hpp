@@ -1,6 +1,14 @@
-//
-// Created by max on 6/24/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/24 17:45:31 by mwagner           #+#    #+#             */
+/*   Updated: 2023/06/24 17:46:04 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #pragma once
 #ifndef EX00_ZOMBIE_HPP
@@ -20,6 +28,6 @@ private:
 	std::string _name;
 };
 
-Zombie* zombieHorde( int N, std::string name );
+Zombie	*zombieHorde( int N, std::string name );
 
 #endif //EX00_ZOMBIE_HPP
