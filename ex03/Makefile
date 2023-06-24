@@ -20,7 +20,10 @@ RESET_COL 	:= \033[0m
 NAME 		:= unnecessary_violence
 CC 			:= c++
 CFLAGS 		:= -Wall -Werror -Wextra -std=c++98
-SRC 		:=	main.cpp
+SRC 		:=	main.cpp \
+				Weapon.cpp \
+				HumanA.cpp \
+				HumanB.cpp \
 
 all: $(NAME)
 
