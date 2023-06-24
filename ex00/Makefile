@@ -20,7 +20,10 @@ RESET_COL 	:= \033[0m
 NAME 		:= braiiiiiiinnnzzzz
 CC 			:= c++
 CFLAGS 		:= -Wall -Werror -Wextra -std=c++98
-SRC 		:=	main.cpp
+SRC 		:=	main.cpp \
+				Zombie.cpp \
+				newZombie.cpp \
+				randomChump.cpp
 
 all: $(NAME)
 
