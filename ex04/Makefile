@@ -20,7 +20,8 @@ RESET_COL 	:= \033[0m
 NAME 		:= sed_is_for_losers
 CC 			:= c++
 CFLAGS 		:= -Wall -Werror -Wextra -std=c++98
-SRC 		:=	main.cpp
+SRC 		:=	main.cpp \
+				errors.cpp
 
 all: $(NAME)
 
@@ -38,5 +39,18 @@ re: fclean all
 
 val:
 	$(VAL) $(RUN)
+
+test1:
+	@echo Test without arguments
+	$(RUN)
+test2:
+	@echo Test with to many arguments
+	$(RUN) text.txt DUNCAN Maximilian doesntbelong
+test3:
+	@echo Test with filename
+	$(RUN) wrongfile old new
+test4:
+	@echo Test with correct arguments
+	$(RUN) test.txt DUNCAN Maximilian
 
 .PHONY: all clean fclean re
