@@ -17,22 +17,28 @@
 int main()
 {
 	{
+		std::cout << "Round 1" << std::endl;
 		Weapon knife = Weapon("Rusty Shiv");
 
-		HumanA bob("Bob", knife);
-		bob.attack();
+		HumanA CharHero("John Wick", knife);
+
+		CharHero.attack();
 		knife.setType("Combat Knife");
-		bob.attack();
+		CharHero.attack();
+		std::cout << "All Bad Guys are dead\n" << std::endl;
 	}
 	{
-		Weapon sword = Weapon("Zweihaender Sword");
-
-		HumanB jim("Jim");
-		jim.attack();
-		jim.setWeapon(sword);
-		jim.attack();
-		sword.setType("Katana");
-		jim.attack();
+		std::cout << "Round 2" << std::endl;
+		Weapon sword = Weapon("cheap Katana");
+		HumanB CharHeroine("TheBride");
+		HumanB CharVillain("Bill", &sword);
+		CharVillain.attack();
+		CharHeroine.attack();
+		CharVillain.attack();
+		CharHeroine.setWeapon(sword);
+		sword.setType("Hotari Hanso Katana");
+		CharHeroine.attack();
+		std::cout << "Bill dies\n" << std::endl;
 	}
 
 	return 0;

@@ -15,6 +15,11 @@
 HumanB::HumanB(std::string name) : _name(name), _weapon(NULL) {
 }
 
+HumanB::HumanB(std::string name, Weapon * weapon_type) : _name(name), _weapon(weapon_type)
+{
+
+}
+
 HumanB::~HumanB() {
 	// empty Destructor Body
 }
