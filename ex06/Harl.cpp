@@ -1,15 +1,23 @@
-//
-// Created by max on 6/25/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Harl.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/25 17:31:39 by mwagner           #+#    #+#             */
+/*   Updated: 2023/06/25 17:36:09 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Harl.hpp"
 
 Harl::Harl() {
-	std::cout << RED << "Harl" << DEFAULT << " approaches with heavy footsteps\n";
+	std::cout << RED << "Harl" << DEFAULT << " approaches with heavy footsteps\n" << std::endl;
 }
 
 Harl::~Harl() {
-	std::cout << RED << "Harl" << DEFAULT <<" finally gives up and decides to leave\n";
+	std::cout << RED << "Harl" << DEFAULT <<" finally gives up and decides to leave\n" << std::endl;
 }
 
 void	Harl::complain(std::string level) {
@@ -65,13 +73,14 @@ void	Harl::warning()
 {
 	std::cout	<< BOLD << "[WARNING' level]\n" << DEFAULT
 				<< "I think I deserve to have some extra bacon for free.\n"
-				<< "I’ve been coming for years whereas you started working "
-				<< "here since last month.\n" << std::endl;
+				<< "I’ve been coming for years whereas you "
+				<< "started working here since last month.\n" << std::endl;
 }
 
 void	Harl::error()
 {
 	std::cout	<< BOLD << "[ERROR' level]\n" << DEFAULT
-				<< "This is unacceptable! I want to speak to the manager now.\n"
+				<< "This is unacceptable!\n"
+				<< "I want to speak to the manager now.\n"
 				<< std::endl;
 }

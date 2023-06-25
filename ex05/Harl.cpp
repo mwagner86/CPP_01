@@ -1,6 +1,14 @@
-//
-// Created by max on 6/25/23.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Harl.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mwagner <mwagner@student.42wolfsburg.de>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/25 17:29:02 by mwagner           #+#    #+#             */
+/*   Updated: 2023/06/25 17:33:55 by mwagner          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Harl.hpp"
 
@@ -32,7 +40,7 @@ Harl::~Harl() {
 
 void	Harl::debug()
 {
-	std::cout	<< BOLD << "'DEBUG' level:\n" << DEFAULT
+	std::cout	<< BOLD << "[DEBUG level]\n" << DEFAULT
 				<< "I love having extra bacon for my "
 				<< "7XL-double-cheese-triple-pickle-special-ketchup burger.\n"
 				<< "I really do!\n" << std::endl;
@@ -40,7 +48,7 @@ void	Harl::debug()
 
 void	Harl::info()
 {
-	std::cout	<< BOLD << "'INFO' level:\n" << DEFAULT
+	std::cout	<< BOLD << "[INFO level]\n" << DEFAULT
 				<< "I cannot believe adding extra bacon costs more money.\n"
 				<< "You didn't put enough bacon in my burger!\n"
 				<< "If you did, I wouldn't be asking for more!\n" << std::endl;
@@ -49,15 +57,16 @@ void	Harl::info()
 
 void	Harl::warning()
 {
-	std::cout	<< BOLD << "'WARNING' level:\n" << DEFAULT
+	std::cout	<< BOLD << "[WARNING' level]\n" << DEFAULT
 				<< "I think I deserve to have some extra bacon for free.\n"
-				<< "I’ve been coming for years whereas you started working "
-				<< "here since last month.\n" << std::endl;
+				<< "I’ve been coming for years whereas you "
+				<< "started working here since last month.\n" << std::endl;
 }
 
 void	Harl::error()
 {
-	std::cout	<< BOLD << "'ERROR' level:\n" << DEFAULT
-				<< "This is unacceptable! I want to speak to the manager now.\n"
+	std::cout	<< BOLD << "[ERROR' level]\n" << DEFAULT
+				<< "This is unacceptable!\n"
+				<< "I want to speak to the manager now.\n"
 				<< std::endl;
 }
