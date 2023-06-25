@@ -10,18 +10,20 @@ Harl::Harl() {
 
 void	Harl::complain(std::string level)
 {
-	void (Harl::*member_functions[4]) (void) = {&Harl::debug,
-												&Harl::info,
-												&Harl::warning,
-												&Harl::error};
+	std::string const change_lvl[4] = {"DEBUG",
+									   "INFO",
+									   "WARNING",
+									   "ERROR"};
+	void	(Harl::*set[4])(void) = {&Harl::debug,
+									&Harl::info,
+									&Harl::warning,
+									&Harl::error};
 
-	int level_type = level.compare("DEBUG") == 0 ? 0 :
-					 level.compare("INFO") == 0 ? 1 :
-					 level.compare("WARNING") == 0 ? 2 :
-					 level.compare("ERROR") == 0 ? 3 : -1;
-	if (level_type == -1)
-		return ;
-	(this->*member_functions[level_type])();
+	for (int i = 0; i < 4; i++)
+	{
+		if (level == change_lvl[i])
+			(this->*set[i])();
+	}
 }
 
 Harl::~Harl() {
