@@ -20,7 +20,8 @@ RESET_COL 	:= \033[0m
 NAME 		:= harl_filter
 CC 			:= c++
 CFLAGS 		:= -Wall -Werror -Wextra -std=c++98
-SRC 		:=	main.cpp
+SRC 		:=	main.cpp \
+				Harl.cpp
 
 all: $(NAME)
 
