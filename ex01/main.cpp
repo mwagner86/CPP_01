@@ -24,4 +24,8 @@ int main() {
 	std::cout	<< "Total "  << RED << "Walker "  << DEFAULT << "amount: "
 				<< GREEN << Zombie::total << DEFAULT <<  std::endl;
 	delete [] horde;
+	std::cout	<< "Remaining "  << RED << "Walker "  << DEFAULT << "amount: "
+				 << GREEN << Zombie::total << DEFAULT <<  std::endl;
+
+	return (0);
 }

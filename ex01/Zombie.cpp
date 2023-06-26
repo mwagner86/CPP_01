@@ -23,6 +23,7 @@ Zombie::Zombie() {
 Zombie::~Zombie() {
 	// Destructor Body
 	std::cout << "Zombie Destructor called : " << RED << this->_name << DEFAULT << std::endl;
+	total--;
 }
 
 int Zombie::total = 0;
