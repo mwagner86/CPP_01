@@ -22,7 +22,7 @@ Zombie::Zombie() {
 // Destructor
 Zombie::~Zombie() {
 	// Destructor Body
-	std::cout << "Zombie Destructor called : " << this->_name << std::endl;
+	std::cout << "Zombie Destructor called : " << RED << this->_name << DEFAULT << std::endl;
 }
 
 int Zombie::total = 0;
@@ -33,5 +33,5 @@ void	Zombie::set_name(std::string name) {
 }
 
 void	Zombie::announce() {
-	std::cout << this->_name << ": BraiiiiiiinnnzzzZ...\n";
+	std::cout << RED << this->_name << DEFAULT << ": BraiiiiiiinnnzzzZ...\n";
 }

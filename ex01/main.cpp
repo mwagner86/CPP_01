@@ -21,6 +21,7 @@ int main() {
 	for (int i = 0; i < amount; i++) {
 		horde[i].announce();
 	}
-	std::cout << "Total Walker amount: " << Zombie::total << std::endl;
+	std::cout	<< "Total "  << RED << "Walker "  << DEFAULT << "amount: "
+				<< GREEN << Zombie::total << DEFAULT <<  std::endl;
 	delete [] horde;
 }

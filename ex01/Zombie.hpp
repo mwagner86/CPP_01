@@ -14,6 +14,9 @@
 #ifndef EX00_ZOMBIE_HPP
 #define EX00_ZOMBIE_HPP
 #include <iostream>
+#define DEFAULT "\033[0;39m"
+#define RED "\033[1;31m"
+#define GREEN "\033[32m"
 
 class Zombie {
 
