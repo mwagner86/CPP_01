@@ -23,11 +23,13 @@ int main(int argc, char *argv[]) {
 	std::string		s1 = argv[2];
 	std::string		s2 = argv[3];
 	std::ifstream	infile(filename.c_str());
-	if (!infile.is_open())
+	// test: chmod 000 test.txt -> run again.
+		if (infile.fail())
 		error_infile(filename);
 	std::string 	outfile_name = filename + ".replace";
 	std::ofstream 	outfile(outfile_name.c_str());
-	if (!outfile.is_open())
+	// test: chmod 444 test.txt.replace -> run again.
+	if (outfile.fail())
 		error_outfile(outfile_name);
 	std::string tmp = get_content(infile);
 	size_t	pos;
