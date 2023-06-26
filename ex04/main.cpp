@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 	std::string		s1 = argv[2];
 	std::string		s2 = argv[3];
 	std::ifstream	infile(filename.c_str());
-	// test: chmod 000 test.txt -> run again.
+	// test: chmod 000 test.txt or choose wrong file name -> run again.
 		if (infile.fail())
 		error_infile(filename);
 	std::string 	outfile_name = filename + ".replace";
@@ -33,8 +33,7 @@ int main(int argc, char *argv[]) {
 		error_outfile(outfile_name);
 	std::string tmp = get_content(infile);
 	size_t	pos;
-	do
-	{
+	do	{
 		pos = tmp.find(s1);
 		if (pos != std::string::npos)
 		{
