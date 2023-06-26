@@ -19,8 +19,8 @@ int main() {
 	horde = zombieHorde(amount, "Walker");
 
 	for (int i = 0; i < amount; i++) {
-		std::cout << "No " << i << " ";
 		horde[i].announce();
 	}
+	std::cout << "Total Walker amount: " << Zombie::total << std::endl;
 	delete [] horde;
 }

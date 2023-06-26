@@ -21,8 +21,9 @@ public:
 	Zombie();
 	~Zombie();
 
-	void announce();
-	void set_name(std::string);
+	void 		announce();
+	void 		set_name(std::string);
+	static int	total;
 
 private:
 	std::string _name;

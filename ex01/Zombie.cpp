@@ -16,6 +16,7 @@
 Zombie::Zombie() {
 	// Constructor Body
 	// std::cout << "Zombie Constructor called : " << std::endl;
+	total++;
 };
 
 // Destructor
@@ -23,6 +24,8 @@ Zombie::~Zombie() {
 	// Destructor Body
 	std::cout << "Zombie Destructor called : " << this->_name << std::endl;
 }
+
+int Zombie::total = 0;
 
 // Setter function for name to protect private var: _name
 void	Zombie::set_name(std::string name) {
