@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
 #include "errors.hpp"
 
 std::string	get_content(std::ifstream &infile);
@@ -23,6 +24,10 @@ int main(int argc, char *argv[]) {
 	std::string		s1 = argv[2];
 	std::string		s2 = argv[3];
 	std::ifstream	infile(filename.c_str());
+	if (s1.empty() || s2.empty()) {
+		std::cout << "Error: Replacement strings cannot be empty." << std::endl;
+		exit(1);
+	}
 	// test: chmod 000 test.txt or choose wrong file name -> run again.
 		if (infile.fail())
 		error_infile(filename);
